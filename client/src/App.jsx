@@ -10,7 +10,7 @@ function App() {
     console.log('sendToServer', data)
 
     // front 데이터를 server로 전송 
-    axios.post('http://localhost:3000/getData', {
+    axios.post('/myweb/getData', {
       data : data
     }).then(res => {
       console.log('res', res.data)
