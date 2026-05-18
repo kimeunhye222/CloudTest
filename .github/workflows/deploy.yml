@@ -110,7 +110,7 @@ jobs:
 
             cd \"\$APP_DIR\"
             git fetch --all
-            git reset --hard origin/main
+            git reset --hard origin/master
 
             # (4) 백엔드 의존성 설치 + PM2 재기동
             cd \"\$APP_DIR/server\"
