@@ -4,7 +4,7 @@ name : Ngnix + Node + React Deployment
 # 2. 업무메뉴얼 동작 시점 설정
 on : 
     push:
-         branches : ["main"]
+         branches : ["master"]
 # 3. 업무 메뉴얼을 더 작은 단위로 쪼개서, 해야할 일을 작성
 jobs:
   # 1) 프론트(React/Vite) 빌드 & Public(Nginx) 배포
