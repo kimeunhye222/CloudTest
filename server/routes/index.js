@@ -24,7 +24,7 @@ router.post('/getData', (req,res)=>{
         if (rows) {
             // 요청에 대한 응답을 프론트로 
             // 기모넹 지우고 클라이언트네임 넣기
-            res.json({status : 200, nick : 'clientName'})
+            res.json({status : 200, nick : clientName})
         } else {
             res.json({status : 500})
         }
