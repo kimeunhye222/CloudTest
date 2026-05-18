@@ -20,7 +20,7 @@ router.post('/getData', (req,res)=>{
         console.log('rows', rows)
         if (rows) {
             // 요청에 대한 응답을 프론트로 
-            res.json({status : 200, nick : '선영표'})
+            res.json({status : 200, nick : '기모넹'})
         } else {
             res.json({status : 500})
         }
