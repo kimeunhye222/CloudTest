@@ -13,6 +13,9 @@ router.get('/', (req,res)=>{
 router.post('/getData', (req,res)=>{
     console.log('getData Router', req.body)
 
+    // 한 줄 추가해서 받을 이름 넣기
+    const clientName = req.body.data;
+
     // nick 데이터를 DB에 넣어보자! 
     let sql =  "INSERT INTO DATA_TABLE VALUES (?)"
     
@@ -20,7 +23,8 @@ router.post('/getData', (req,res)=>{
         console.log('rows', rows)
         if (rows) {
             // 요청에 대한 응답을 프론트로 
-            res.json({status : 200, nick : '기모넹'})
+            // 기모넹 지우고 클라이언트네임 넣기
+            res.json({status : 200, nick : 'clientName'})
         } else {
             res.json({status : 500})
         }
